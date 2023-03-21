@@ -16,4 +16,44 @@ li{
     background: #012434;
 }
 
+/* Navbar Section Styling */
+.navbar_section{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Section */
+.logo_section{
+    display: flex;
+    align-items: center;
+}
+.logo_link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #02c1f1;
+}
+.logo_link span{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #707070;
+}
+
+/* Nav items links */
+.nav_items_section{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
 /* End */

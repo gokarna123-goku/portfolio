@@ -1,0 +1,19 @@
+/*  */
+
+/* Global Section Styling */
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* Main Section */
+
+.main_section{
+    width: 100%;
+    height: 100vh;
+    background: #012434;
+}
+
+/* End */

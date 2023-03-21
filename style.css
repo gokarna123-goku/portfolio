@@ -20,7 +20,6 @@ li{
 .navbar_section{
     width: 100%;
     height: auto;
-    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,13 +34,17 @@ li{
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: #02c1f1;
+    background: linear-gradient(35deg, #fc00ff, #00dbde);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,0,128), #00dbde);
+    border-image-slice: 1;
+    width:100%;
 }
 .logo_link span{
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: #707070;
 }
 
 /* Nav items links */
@@ -54,6 +57,85 @@ li{
     display: flex;
     align-items: center;
     gap: 1.7rem;
+}
+.nav_items .link{
+    font-size: 1.29rem;
+    letter-spacing: 0.09rem;
+    color: #bcbcbc;
+}
+.nav_items .link:hover{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,0,128), #00dbde);
+    border-image-slice: 1;
+    width:100%;
+}
+.nav_items .active{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,0,128), #00dbde);
+    border-image-slice: 1;
+    width:100%;
+}
+
+/* Hero Section Styling */
+.hero_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 7rem;
+}
+/* Personal Data Styling */
+.personal_data_section{
+    width: 65%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.68rem;
+}
+.social_icon{
+    width: 33px;
+    height: 33px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_link{
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: #012434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbcbc;
+}
+.social_link:hover{
+    color: #bcbcbc;
+}
+
+/* Img Section Styling */
+.img_section{
+    width: 34%;
+    height: auto;
+}
+.my_img{
+    width: 100%;
+    height: 40vh;
 }
 
 /* End */

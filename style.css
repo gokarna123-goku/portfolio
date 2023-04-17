@@ -25,8 +25,8 @@ li{
     left: 0;
     background: #011117;
     z-index: 999;
-    border-bottom: 1px solid #02141b;
-    /* box-shadow: 0px 1px 10px #02171f; */
+    border-bottom: 2px solid #02141b;
+    box-shadow: 0px 0.5px 20px #01141b;
 }
 /* nav.scrolled-down{
     top: 0;
@@ -102,11 +102,11 @@ li{
     display: flex;
     align-items: center;
     gap: 1.7rem;
-    margin-top: 9rem;
+    margin-top: 4.5rem;
 }
 /* Personal Data Styling */
 .personal_data_section{
-    width: 65%;
+    width: 57%;
     height: auto;
     display: flex;
     align-items: center;
@@ -164,34 +164,6 @@ li{
     transform-origin: 70% 70%; */
 }
 
-/* waving hand animation */
-/* @keyframes waving {
-    0%{
-        transform: rotate(0deg);
-    }
-    10%{
-        transform: rotate(14deg);
-    }
-    20%{
-        transform: rotate(-8deg);
-    }
-    30%{
-        transform: rotate(14deg);
-    }
-    40%{
-        transform: rotate(-4.0deg);
-    }
-    50%{
-        transform: rotate(10deg);
-    }
-    60%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-} */
-
 .fullname{
     font-size: 2.5rem;
     font-weight: bold;
@@ -229,17 +201,10 @@ li{
     font-weight: 600;
     color: #012434;
 }
-/* .red_shadow{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 150px #fc00ff;
-    background: #fc00ff;
-} */
 
 /* Img Section Styling */
 .img_section{
-    width: 34%;
+    width: 40%;
     height: auto;
     background: linear-gradient(45deg, #fc00ff, #00dbde);
     border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
@@ -247,7 +212,7 @@ li{
 }
 .my_img{
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     object-fit: cover;
     object-position: center;
     padding: 0.7rem;

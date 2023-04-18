@@ -153,15 +153,34 @@ li{
     align-items: flex-start;
     flex-direction: column;
 }
+.intro_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
 .intro{
     font-size: 1.1rem;
     font-weight: 500;
     color: #999999;
 }
 .wave{
-    font-size: 1.5rem; 
-    /* animation: waving 0.55s infinite;
-    transform-origin: 70% 70%; */
+    font-size: 1.5rem;
+    transform-origin: bottom center !important;
+    /* transform: rotate(15deg) !important; */
+    animation: wave 2s infinite !important;
+}
+
+@keyframes wave {
+    0% { 
+        transform: rotate(30deg); 
+    }
+    50% {
+        transform: rotate(-8deg); 
+    }
+    100% {
+        transform: rotate(30deg); 
+    }
 }
 
 .fullname{
@@ -209,6 +228,11 @@ li{
     background: linear-gradient(45deg, #fc00ff, #00dbde);
     border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
     box-shadow: -3px -3px 150px #024f50;
+    transition: all 0.5s ease-out; 
+}
+.img_section:hover{
+    box-shadow: -3px -3px 150px linear-gradient(45deg, #fc00ff, #00dbde);
+    background: linear-gradient(60deg, #fc00ff, #00dbde);
 }
 .my_img{
     width: 100%;

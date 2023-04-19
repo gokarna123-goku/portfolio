@@ -312,9 +312,11 @@ li{
     border-radius: 50%;
     background: transparent;
     /* box-shadow: 15px 15px 130px 70px #185d5e; */
-    box-shadow: 15px 15px 250px 70px #762178;
-    top: 40%;
-    left: 16%;
+    box-shadow: 40px 45px 400px 140px rgba(118,33,120,0.78);
+    -webkit-box-shadow: 40px 45px 400px 140px rgba(118,33,120,0.78);
+    -moz-box-shadow: 40px 45px 400px 140px rgba(118,33,120,0.78);
+    top: 45%;
+    left: 15%;
     z-index: 9999;
     transition: 0.5s ease-out;
 }

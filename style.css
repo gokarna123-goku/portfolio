@@ -153,6 +153,56 @@ li{
     align-items: flex-start;
     flex-direction: column;
 }
+
+/* Animation for Title Section */
+.slideToUp1{
+    animation: slideToUp 1s ease-in;
+}
+.slideToUp2{
+    animation: slideToUp 1.5s ease-in;
+}
+.slideToUp3{
+    animation: slideToUp 2s ease-in;
+}
+.slideToUp4{
+    animation: slideToUp 2.5s ease-in;
+}
+
+@keyframes slideToUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);  
+    }
+}
+
+.slideToLeftFacebook{
+    animation: slideToLeft 1.5s ease-in;
+}
+.slideToLeftYoutube{
+    animation: slideToLeft 1.8s ease-in;
+}
+.slideToLeftInstagram{
+    animation: slideToLeft 2.1s ease-in;
+}
+.slideToLeftLinkedin{
+    animation: slideToLeft 2.4s ease-in;
+}
+.slideToLeftGithub{
+    animation: slideToLeft 2.7s ease-in;
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0);  
+    }
+}
+
+/*  */
 .intro_section{
     width: 100%;
     height: auto;
@@ -165,21 +215,26 @@ li{
     color: #999999;
 }
 .wave{
+    display: inline-block !important;
     font-size: 1.5rem;
     transform-origin: bottom center !important;
-    /* transform: rotate(15deg) !important; */
-    animation: wave 2s infinite !important;
+    animation: wave 4s ease-out infinite !important;
 }
-
 @keyframes wave {
-    0% { 
-        transform: rotate(30deg); 
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(30deg);
     }
     50% {
-        transform: rotate(-8deg); 
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(30deg);
     }
     100% {
-        transform: rotate(30deg); 
+      transform: rotate(0deg);
     }
 }
 
@@ -190,9 +245,9 @@ li{
     color: #bcbcbc;  
 }
 .postition{
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.11rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.14rem;
     background: linear-gradient(180deg, #fc00ff, #00dbde);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;

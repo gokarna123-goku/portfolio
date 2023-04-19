@@ -112,40 +112,7 @@ li{
     align-items: center;
     column-gap: 2.1rem;
 }
-.social_icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 0.88rem;
-    margin-bottom: 2.1rem;
-}
-.social_icon{
-    width: 33px;
-    height: 33px;
-    border-radius: 40px 35px 20px 15px/15px 20px 35px 40px;
-    background: linear-gradient(90deg, #00dbde, #fc00ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.social_icon:hover{
-    background: linear-gradient(-45deg, #00dbde, #fc00ff);
-}
-.social_link{
-    width: 28px;
-    height: 28px;
-    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
-    background: #012434;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #bcbcbc;
-}
-.social_link:hover{
-    color: #bcbcbc;
-}
+
 
 /* Other information styling */
 .other_info{
@@ -154,55 +121,6 @@ li{
     flex-direction: column;
 }
 
-/* Animation for Title Section */
-.slideToUp1{
-    animation: slideToUp 1s ease-in;
-}
-.slideToUp2{
-    animation: slideToUp 1.5s ease-in;
-}
-.slideToUp3{
-    animation: slideToUp 2s ease-in;
-}
-.slideToUp4{
-    animation: slideToUp 2.5s ease-in;
-}
-
-@keyframes slideToUp {
-    from {
-        transform: translateY(30px);
-    }
-    to {
-        transform: translateY(0);  
-    }
-}
-
-.slideToLeftFacebook{
-    animation: slideToLeft 1.5s ease-in;
-}
-.slideToLeftYoutube{
-    animation: slideToLeft 1.8s ease-in;
-}
-.slideToLeftInstagram{
-    animation: slideToLeft 2.1s ease-in;
-}
-.slideToLeftLinkedin{
-    animation: slideToLeft 2.4s ease-in;
-}
-.slideToLeftGithub{
-    animation: slideToLeft 2.7s ease-in;
-}
-
-@keyframes slideToLeft {
-    from {
-        transform: translateX(-400px);
-    }
-    to {
-        transform: translateX(0);  
-    }
-}
-
-/*  */
 .intro_section{
     width: 100%;
     height: auto;
@@ -260,6 +178,92 @@ li{
     color: #999999;
     margin-bottom: 2.2rem;
 }
+
+/* Animation for Title Section */
+.slideToUp1{
+    animation: slideToUp 1s ease-in;
+}
+.slideToUp2{
+    animation: slideToUp 1.5s ease-in;
+}
+.slideToUp3{
+    animation: slideToUp 2s ease-in;
+}
+.slideToUp4{
+    animation: slideToUp 2.5s ease-in;
+}
+
+@keyframes slideToUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);  
+    }
+}
+
+/*  */
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.88rem;
+    margin-bottom: 2.1rem;
+}
+.social_icon{
+    width: 33px;
+    height: 33px;
+    border-radius: 40px 35px 20px 15px/15px 20px 35px 40px;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_icon:hover{
+    background: linear-gradient(-45deg, #00dbde, #fc00ff);
+}
+.social_link{
+    width: 28px;
+    height: 28px;
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    background: #012434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbcbc;
+}
+.social_link:hover{
+    color: #bcbcbc;
+}
+
+/* Social Icon Animation */
+.slideToLeftFacebook{
+    animation: slideToLeft 1.5s ease-out;
+}
+.slideToLeftYoutube{
+    animation: slideToLeft 1.8s ease-out;
+}
+.slideToLeftInstagram{
+    animation: slideToLeft 2.1s ease-out;
+}
+.slideToLeftLinkedin{
+    animation: slideToLeft 2.4s ease-out;
+}
+.slideToLeftGithub{
+    animation: slideToLeft 2.7s ease-out;
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0);  
+    }
+}
+
 
 .download_btn{
     width: 160px;

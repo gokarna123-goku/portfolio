@@ -285,21 +285,41 @@ li{
     width: 40%;
     height: auto;
     background: linear-gradient(45deg, #fc00ff, #00dbde);
-    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    border-radius: 70px 45px 40px 15px/20px 20px 35px 80px;
     box-shadow: -3px -3px 150px #024f50;
     transition: all 0.5s ease-out; 
 }
-.img_section:hover{
+/* .img_section:hover{
     box-shadow: -3px -3px 150px linear-gradient(45deg, #fc00ff, #00dbde);
     background: linear-gradient(60deg, #fc00ff, #00dbde);
-}
+} */
 .my_img{
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     object-fit: cover;
     object-position: center;
     padding: 0.7rem;
-    border-radius: 60px 45px 30px 20px/20px 30px 45px 60px;
+    border-radius: 70px 45px 40px 15px/20px 20px 35px 80px;
+}
+
+
+
+/* Neon Light or Background dim light Section Styling */
+.red_circle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    /* box-shadow: 15px 15px 130px 70px #185d5e; */
+    box-shadow: 15px 15px 250px 70px #762178;
+    top: 40%;
+    left: 16%;
+    z-index: 9999;
+    transition: 0.5s ease-out;
+}
+.red_circle:hover{
+    box-shadow: 15px 15px 130px 70px #fc00ff;
 }
 
 /* End */

@@ -1,11 +1,17 @@
 /*  */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Global Section Styling */
 a{
     text-decoration: none;
 }
 li{
     list-style-type: none;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
 /* Main Section */
@@ -57,6 +63,10 @@ li{
 }
 
 /* Nav items links */
+.nav_items_section{
+    width: 100%;
+    height: auto;
+}
 .nav_items{
     display: flex;
     align-items: center;
@@ -84,6 +94,13 @@ li{
     width:100%;
 }
 
+/* Toggle Icon Styling */
+.toggleIcon{
+    font-size: 1.3rem;
+    color: #bcbcbc;
+    display: none;
+}
+
 /* Hero Section Styling */
 .hero_section{
     width: 100%;
@@ -91,7 +108,7 @@ li{
     display: flex;
     align-items: center;
     gap: 1.7rem;
-    margin-top: 4.5rem;
+    padding-top: 5.0rem !important;
 }
 /* Personal Data Styling */
 .personal_data_section{
@@ -320,9 +337,39 @@ li{
 }
 
 @media (max-width: 915px) {
-    .nav_items .link {
-        font-size: 1.29rem;
+    .nav_items_section .nav_items{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(1, 17, 23, 0.88);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: a11 0.5s ease-out;
+        z-index: 9999;
     }
+    .nav_items_section li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggleIcon{
+        display: block;
+    }
+    .nav_items .link {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .nav_items_section ul.showNavbar{
+        left: 0;
+    }
+    /*  */
     .fullname {
         font-size: 2.0rem;
         letter-spacing: 0.099rem;
@@ -334,6 +381,57 @@ li{
     .my_img {
         width: 100%;
         height: 64vh;
+    }
+}
+
+@media (max-width: 770px) {
+    .main_section{
+        width: 100%;
+        height: 130vh;
+    }
+    .hero_section {
+        flex-wrap: wrap;
+        padding-top: 4.5rem !important;
+        gap: 2rem;
+    }
+    .personal_data_section {
+        width: 100%;
+    }
+    .red_circle{
+        background: transparent;
+        box-shadow: 40px 45px 200px 90px rgba(118,33,120,0.78);
+        -webkit-box-shadow: 40px 45px 200px 90px rgba(118,33,120,0.78);
+        -moz-box-shadow: 40px 45px 200px 90px rgba(118,33,120,0.78);
+        top: 20%;
+        left: 15%;
+    }
+    /*  */
+    .fullname {
+        font-size: 1.5rem;
+        letter-spacing: 0.099rem;
+    }
+    .about_me {
+        font-size: 0.799rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .img_section{
+        width: 100%;
+    }
+    .my_img{
+        width: 100%;
+        height: 64vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .main_section{
+        width: 100%;
+        height: 135vh;
+    }
+    .my_img{
+        width: 100%;
+        height: 57vh;
     }
 }
 

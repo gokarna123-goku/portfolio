@@ -17,45 +17,58 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Title -->
     <title>G-Tech | Portfolio</title>
+    <!-- Script Section -->
+    <script>
+        $(document).ready(function () {
+            $('#toggleIcon').click(function () {
+                $('ul').toggleClass('showNavbar');
+            });
+        });
+    </script>
 </head>
 
 <body>
 
     <div class="container-fluid px-0 mx-0 main_section">
         <!-- Header Section -->
-        <nav class="container-fluid px-0 mx-0 nav_section" id="nav">
-            <div class="container col-lg-9">
+        <nav class="container-fluid px-0 mx-0 nav_section fixed-top" id="nav">
+            <div class="container col-lg-9 col-md-10 col-sm-11 col-11">
                 <div class="navbar_section py-3">
-                    <div class="logo_section">
+                    <div class="logo_section pb-1">
                         <a href="./index.html" class="logo_link">
                             Port<span>folio</span>.
                         </a>
                     </div>
-                    <div class="nav_items_section">
-                        <ul class="nav_items">
-                            <li class="nav_link">
-                                <a href="#" class="link active">Home</a>
-                            </li>
-                            <li class="nav_link">
-                                <a href="#" class="link">About</a>
-                            </li>
-                            <li class="nav_link">
-                                <a href="#" class="link">Services</a>
-                            </li>
-                            <li class="nav_link">
-                                <a href="#" class="link">Portfolio</a>
-                            </li>
-                            <li class="nav_link">
-                                <a href="#" class="link">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="nav_items_icon">
+                        <div class="nav_items_section pt-1">
+                            <ul class="nav_items">
+                                <li class="nav_link">
+                                    <a href="#" class="link active">Home</a>
+                                </li>
+                                <li class="nav_link">
+                                    <a href="#" class="link">About</a>
+                                </li>
+                                <li class="nav_link">
+                                    <a href="#" class="link">Services</a>
+                                </li>
+                                <li class="nav_link">
+                                    <a href="#" class="link">Portfolio</a>
+                                </li>
+                                <li class="nav_link">
+                                    <a href="#" class="link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <label class="toggleIcon" id="toggleIcon">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </label>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Hero Section -->
-        <div class="container col-lg-9">
-            <div class="hero_section">
+        <div class="container col-lg-9 col-md-10 col-sm-11 col-11 py-lg-5 py-sm-0 py-0">
+            <div class="hero_section my-lg-5 py-sm-0 py-0">
                 <div class="personal_data_section">
                     <div class="other_info">
                         <div class="mb-2 intro_section slideToUp1">
@@ -101,7 +114,7 @@
                     </div>
                 </div>
                 <div class="img_section">
-                        <img src="./img/pic2.jpg" alt="My Image" class="my_img">
+                    <img src="./img/pic2.jpg" alt="My Image" class="my_img">
                 </div>
             </div>
         </div>

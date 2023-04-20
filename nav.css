@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: montserrat;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+nav ul{
+    float: right; 
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    .logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px) {
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(47, 54, 64, 0.62);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: a11 0.5s ease-out;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+section{
+    background: url("https://cdn.pixabay.com/photo/2022/10/04/21/25/vr-7499157__340.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/*  */

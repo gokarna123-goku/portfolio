@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Cdn link -->
+    <script src="https://kit.fontawesome.com/676eaf438a.js" crossorigin="anonymous"></script>
+    <!-- JQuery Cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- Custom Css Cdn Link -->
+    <link rel="stylesheet" href="./nav.css">
+    <!-- Title -->
+    <title>Responsive Navbar</title>
+
+    <!-- Script Section -->
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </label>
+    </nav>
+
+    <!--  -->
+    <!-- <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid py-2">
+            <div class="logo_section">
+                <a href="./index.html" class="logo_link">
+                    Port<span>folio</span>.
+                </a>
+            </div>
+            <div class="nav_items_section">
+                <ul class="nav_items">
+                    <li class="nav_link">
+                        <a href="#" class="link active">Home</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#" class="link">About</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#" class="link">Services</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#" class="link">Portfolio</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#" class="link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <section></section>
+
+    <!-- Script -->
+    <script src="./nav.js"></script>
+
+</body>
+
+</html>
